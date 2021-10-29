@@ -1,0 +1,10 @@
+// 日期时间格式化常用模板
+const DATETIME_STRING_FORMAT = 'YYYY-MM-DD HH:mm:ss';
+const DATE_STRING_FORMAT = 'YYYY-MM-DD';
+const TIME_STRING_FORMAT = 'HH:mm:ss';
+
+module.exports = {
+  DATETIME_STRING_FORMAT,
+  DATE_STRING_FORMAT,
+  TIME_STRING_FORMAT,
+};

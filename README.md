@@ -4,11 +4,21 @@
 
 如果需要更完善的功能可以考虑使用[Day.js](https://github.com/iamkun/dayjs),仅 2kB
 
+安装
+
+```
+npm i miniprogram-date
+```
+
 ## MiniDate 的使用
 
 ```js
-const MiniDate = require('../src/mini-date.js');
-const constant = require('../src/constant.js');
+const MiniDate = require('miniprogram-date');
+const constant = require('miniprogram-date/src/constant.js');
+
+
+// const MiniDate = require('../src/mini-date.js');
+// const constant = require('../src/constant.js');
 
 console.log(new MiniDate().format('YYYY-MM-DD HH:mm:ss'));
 // 2021-10-29 11:27:31
@@ -29,8 +39,11 @@ console.log(MiniDate.fromString('2021-10-29 03:00:00'));
 
 ```js
 // 引入 Date polyfill
-require('../src/date-polyfill.js');
-const constant = require('../src/constant.js');
+require('miniprogram-date/src/date-polyfill.js');
+const constant = require('miniprogram-date/src/constant.js');
+
+// require('../src/date-polyfill.js');
+// const constant = require('../src/constant.js');
 
 console.log(new Date().format('YYYY-MM-DD HH:mm:ss'));
 // 2021-10-29 11:27:31
